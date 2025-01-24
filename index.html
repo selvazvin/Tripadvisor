@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- --Navbar-- -->
+    
+    <div class="navbar">
+        <div class="navbar__icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar__logo-image">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1333.31 1333.31" shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                clip-rule="evenodd">
+                <g fill-rule="nonzero">
+                    <circle cx="666.66" cy="666.66" r="666.66" fill="#34e0a1" />
+                    <path
+                        d="M1078.42 536.6l80.45-87.52h-178.4c-89.31-61.01-197.17-96.54-313.81-96.54-116.5 0-224.06 35.61-313.22 96.54H174.6l80.44 87.52c-49.31 44.99-80.22 109.8-80.22 181.75 0 135.79 110.09 245.88 245.88 245.88 64.51 0 123.27-24.88 167.14-65.55l78.81 85.81 78.81-85.73c43.87 40.67 102.57 65.47 167.07 65.47 135.79 0 246.03-110.09 246.03-245.88.07-72.03-30.84-136.83-80.15-181.75zM420.77 884.75c-91.92 0-166.4-74.48-166.4-166.4s74.49-166.4 166.4-166.4c91.92 0 166.4 74.49 166.4 166.4 0 91.91-74.49 166.4-166.4 166.4zm245.96-171.24c0-109.5-79.63-203.5-184.73-243.65 56.84-23.76 119.18-36.94 184.66-36.94 65.47 0 127.89 13.18 184.73 36.94-105.02 40.23-184.65 134.15-184.65 243.65zm245.88 171.24c-91.92 0-166.4-74.48-166.4-166.4s74.49-166.4 166.4-166.4c91.92 0 166.4 74.49 166.4 166.4 0 91.91-74.49 166.4-166.4 166.4zm0-253.7c-48.2 0-87.23 39.03-87.23 87.23 0 48.19 39.03 87.22 87.23 87.22 48.19 0 87.22-39.03 87.22-87.22 0-48.12-39.03-87.23-87.22-87.23zM508 718.35c0 48.19-39.03 87.22-87.23 87.22-48.19 0-87.22-39.03-87.22-87.22 0-48.2 39.03-87.23 87.22-87.23 48.19-.07 87.23 39.03 87.23 87.23z" />
+                </g>
+            </svg>
+        </div>
+        
+        <div class="navbar__logo-name">
+            <h1>Triadvisior</h1>
+        </div>
+        <div class="navbar__icon2">
+            <i class="fa-solid fa-user" style="color: #000000;"></i>
+        </div>
+        <div class="navbar__menu">
+            <p>Discover</p>
+            <p>Trips</p>
+            <p>Review</p>
+            <p>More</p>
+        </div>
+        <div class="navbar__select-country">
+            <i class="fa-solid fa-globe" style="color: #000000;"></i> | USD
+            <button class="navbar__select-country__button">Sign in</button>
+        </div>
+        
+    </div>
+
+    
+
+    <!-- --Searchbar-- -->
+    <div class="search">
+        <div class="search__title">
+            <h1>Where to?</h1>
+        </div>
+        <div class="search__menu-container">
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-house" style="color: #000000;"></i>
+                <p class="searchall_decoration">Search All</p>
+            </div>
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-hotel" style="color: #000000;"></i>
+                <p>Hotels</p>
+            </div>
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-note-sticky"></i>
+                <p>Things to Do</p>
+            </div>
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-utensils" style="color: #000000;"></i>
+                <p>Restaurants</p>
+            </div>
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-plane-circle-check"></i>
+                <p>Flights</p>
+            </div>
+            <div class="search__menu-container__item">
+                <i class="fa-solid fa-house-lock"></i>
+                <p>Vacation Rentals</p>
+            </div>
+        </div>
+        <div class="search__seachbar">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            <input type="text" placeholder="Please to go, things to go, hotels...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- --banner 1-- -->
+    <div class="banner1">
+        <div class="banner1_textcontainer">
+            <div class="banner1_textcontainer__top">
+                <p>Powered by AI</p><button>BETA</button>
+            </div>
+            <div class="banner1_textcontainer__title">
+                <h1>Get custom recs for5 your next trip</h1>
+                <p>Find great eats, experiences, and more—inspired by things you love.</p>
+                <button><i class="fa-solid fa-location-dot" style="color: white;"></i> Start a trip with AI</button>
+            </div>
+        </div>
+        <div class="banner1_img1">
+            <img src="./image/Banner1.jpg" alt="" width="100%" height="450px">
+        </div>
+    </div>
+
+    <!-- --banner 2-- -->
+    <div class="banner2">
+        <div class="banner2__image">
+            <img src="./image/Banner2.png" alt="" width="600px" height="100px">
+        </div>
+        <div class="banner2__image__icon">
+            <i class="fa-solid fa-circle-info" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-circle-xmark" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!-- top-rated -->
+    <div class="top-rated__title">
+        <h1>Explore top-rated destinations</h1>
+        <p>2025’s Travelers’ Choice Awards Best of the Best Destinations</p>
+    </div>
+    <div class="top-rated">
+        <div class="top-rated__container">
+            <div class="top-rated__container__item">
+                <img src="./image/top-rated (1).jpg" alt="" width="250px" height="250px">
+                <p>Top Destinations</p>
+            </div>
+            <div class="top-rated__container__item">
+                <img src="./image/top-rated (2).jpg" alt="" width="250px" height="250px">
+                <p>Trending Destinations</p>
+            </div>
+            <div class="top-rated__container__item">
+                <img src="./image/top-rated (3).jpg" alt="" width="250px" height="250px">
+                <p>Food Destinations</p>
+            </div>
+            <div class="top-rated__container__item">
+                <img src="./image/top-rated (4).jpg" alt="" width="250px" height="250px">
+                <p>Culture Destinations</p>
+            </div>
+        </div>
+        <div class="top-rated__container__arrow">
+            <img src="./image/play-sign.png" alt="">
+        </div>
+    </div>
+
+    <!-- travel creators -->
+    <div class="travel-creators__title">
+        <h1>Get inspired by our fave travel creators</h1>
+        <p>Tried-and-true guidance to fuel your next big trip</p>
+    </div>
+    <div class="travel-creator">
+        <div class="travel-creator__container">
+            <div class="travel-creator__container__item">
+                <img src="./image/travel creator (1).jpg" alt="" width="350px" height="250px">
+                <p>By Ashlyn S</p>
+                <p>3 family-friendly days in Rome</p>
+                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                <h5>30 items</h5>
+            </div>
+            <div class="travel-creator__container__item">
+                <img src="./image/travel creator (2).jpg" alt="" width="350px" height="250px">
+                <p>By Eileen Ivette</p>
+                <p>The ultimate 'workcation' in Mexico City</p>
+                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                <h5>28 items</h5>
+            </div>
+            <div class="travel-creator__container__item">
+                <img src="./image/travel creator (3).jpg" alt="" width="350px" height="250px">
+                <p>By Ashlyn S</p>
+                <p>Exploring LGBTQ+-friendly Barcelona</p>
+                <i class="fa-solid fa-heart" style="color: #ff0000;"></i>
+                <h5>28 items</h5>
+            </div>
+            <div class="travel-creator__container__arrow">
+                <img src="./image/play-sign.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- tour dubai -->
+    <div class="tour-dubai__title">
+        <h1>Ways to tour Dubai</h1>
+        <p>Book these experiences for a close-up look at Dubai.</p>
+    </div>
+    <div class="tour-dubai">
+        <div class="tour-dubai__container">
+            <div class="tour-dubai__container__items">
+                <img src="./image/tour dubai (1).jpg" alt="" width="250px" height="250px">
+                <div class="tour-dubai__container__items__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>Dubai Desert Discovery: Red Dunes Safari, Sandboard & Camel Ride</p>
+                <p class="tour-dubai__circle">
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i> 494
+                </p>
+                <p>from $210 per group</p>
+            </div>
+            <div class="tour-dubai__container__items">
+                <img src="./image/tour dubai (2).jpg" alt="" width="250px" height="250px">
+                <div class="tour-dubai__container__items__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>Abu Dhabi Full-Day Sightseeing Tour from Dubai with Mosque Visit</p>
+                <p class="tour-dubai__circle">
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i> 494
+                </p>
+                <p>from $210 per group</p>
+            </div>
+            <div class="tour-dubai__container__items">
+                <img src="./image/tour dubai (3).jpg" alt="" width="250px" height="250px">
+                <div class="tour-dubai__container__items__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>90 Minutes Speedboat Tour: Marina, Atlantis, Palm & Burj Al Arab</p>
+                <p class="tour-dubai__circle">
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i> 494
+                </p>
+                <p>from $210 per group</p>
+            </div>
+            <div class="tour-dubai__container__items">
+                <img src="./image/tour dubai (4).jpg" alt="" width="250px" height="250px">
+                <div class="tour-dubai__container__items__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>Evening Desert Safari Dubai with Camel Riding & BBQ Buffet Dinner</p>
+                <p class="tour-dubai__circle">
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i>
+                    <i class="fa-solid fa-circle" style="color: #00AA6C"></i> 494
+                </p>
+                <p>from $210 per group</p>
+            </div>
+
+        </div>
+        <div class="tour-dubai__container__arrow">
+            <img src="./image/play-sign.png" alt="">
+        </div>
+    </div>
+
+    <!-- banner3 -->
+
+    <div class="banner3">
+        <div class="banner3_image">
+            <img src="./image/Banner3.jpg" alt="" width="100px" height="100px">
+        </div>
+        <div class="banner3_textcontent">
+            <p class="banner3_textcontent__top">Traveller's Choice</p>
+            <h1>Traveller's Choice Best of the Best Experiences</h1>
+            <p>Our top 1%, powered by real reviews.</p>
+        </div>
+        <div class="banner3__button"><button>See the list</button></div>
+    </div>
+    <!-- More to explore -->
+    <div class="more-to-explore__title">
+        <h1>More to explore</h1>
+    </div>
+    <div class="more-to-explore">
+        <div class="more-to-explore__container">
+            <div class="more-to-explore__container__item">
+                <img src="./image/more to explore (3).jpg" alt="" width="350px" height="250px">
+                <div class="more-to-explore__containe__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>7 national parks that are spectacular in winter</p>
+            </div>
+            <div class="more-to-explore__container__item">
+                <img src="./image/more to explore (2).jpg" alt="" width="350px" height="250px">
+                <div class="more-to-explore__containe__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>A perfect day in Madrid</p>
+            </div>
+            <div class="more-to-explore__container__item">
+                <img src="./image/more to explore (1).jpg" alt="" width="350px" height="250px">
+                <div class="more-to-explore__containe__heart"><i class="fa-regular fa-heart"
+                        style="color: #000000;"></i></div>
+                <p>The only-in-winter guide to New York City</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top destinations for your next vacation -->
+    <div class="top-desti_title">
+        <h1>Top destinations for your next vacation</h1>
+    </div>
+    <div class="top-desti">
+        <div class="top-desti__container">
+            <div class="top-desti__container__item">
+                <img src="./image/top destination (2).jpg" alt="" width="250px" height="250px">
+                <p>Yellowstone National Park, Wyoming</p>
+            </div>
+            <div class="top-desti__container__item">
+                <img src="./image/top destination (1).jpg" alt="" width="250px" height="250px">
+                <p>Punta Cana, Dominican Republic</p>
+            </div>
+            <div class="top-desti__container__item">
+                <img src="./image/top destination (3).jpg" alt="" width="250px" height="250px">
+                <p>Orlando, Florida</p>
+            </div>
+            <div class="top-desti__container__item">
+                <img src="./image/top destination (4).jpg" alt="" width="250px" height="250px">
+                <p>Sedona, Arizona</p>
+            </div>
+        </div>
+        <div class="top-desti__container__arrow">
+            <img src="./image/play-sign.png" alt="">
+        </div>
+    </div>
+    <!-- banner4 -->
+    <div class="banner4">
+        <div class="banner4__image">
+            <img src="./image/Banner4.jpg" alt="">
+        </div>
+        <div class="banner4_textcontent">
+            <div class="banner4_textcontent__image">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1333.31 1333.31"
+                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                    <g fill-rule="nonzero">
+                        <circle cx="666.66" cy="666.66" r="666.66" fill="#34e0a1" />
+                        <path
+                            d="M1078.42 536.6l80.45-87.52h-178.4c-89.31-61.01-197.17-96.54-313.81-96.54-116.5 0-224.06 35.61-313.22 96.54H174.6l80.44 87.52c-49.31 44.99-80.22 109.8-80.22 181.75 0 135.79 110.09 245.88 245.88 245.88 64.51 0 123.27-24.88 167.14-65.55l78.81 85.81 78.81-85.73c43.87 40.67 102.57 65.47 167.07 65.47 135.79 0 246.03-110.09 246.03-245.88.07-72.03-30.84-136.83-80.15-181.75zM420.77 884.75c-91.92 0-166.4-74.48-166.4-166.4s74.49-166.4 166.4-166.4c91.92 0 166.4 74.49 166.4 166.4 0 91.91-74.49 166.4-166.4 166.4zm245.96-171.24c0-109.5-79.63-203.5-184.73-243.65 56.84-23.76 119.18-36.94 184.66-36.94 65.47 0 127.89 13.18 184.73 36.94-105.02 40.23-184.65 134.15-184.65 243.65zm245.88 171.24c-91.92 0-166.4-74.48-166.4-166.4s74.49-166.4 166.4-166.4c91.92 0 166.4 74.49 166.4 166.4 0 91.91-74.49 166.4-166.4 166.4zm0-253.7c-48.2 0-87.23 39.03-87.23 87.23 0 48.19 39.03 87.22 87.23 87.22 48.19 0 87.22-39.03 87.22-87.22 0-48.12-39.03-87.23-87.22-87.23zM508 718.35c0 48.19-39.03 87.22-87.23 87.22-48.19 0-87.22-39.03-87.22-87.22 0-48.2 39.03-87.23 87.22-87.23 48.19-.07 87.23 39.03 87.23 87.23z" />
+                    </g>
+                </svg>
+                <p>Sponsored by CESAR®</p>
+            </div>
+            <div class="banner4_textcontent__text">
+                <h2>It’s easier than ever to go together</h2>
+                <p>Travel is better when you can share it with your best friend. Find all the tips, guides, and tools
+                    you need to take a dream trip with your dog.</p>
+                <button>Explore more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner5 -->
+    <div class="banner5">
+        <div class="banner5__textcontent">
+            <img src="https://static.tacdn.com/img2/travelers_choice/2023/TC_badge_yellow.svg" alt="">
+            <h2>Travelers' Choice Awards Best of the Best</h2>
+            <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+            <button>See the winner</button>
+        </div>
+        <div class="banner5__image">
+            <img src="./image/Banner5.png" alt="">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer__lefttopcontainer">
+            <div footer__lefttopcontainer_s1>
+                <p><a href="">About Tripadvisor</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Press</a></p>
+                <p><a href="">Resources and Policies</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Investor Relations</a></p>
+                <p><a href="">Trust & Safety</a></p>
+                <p><a href="">Contact us</a></p>
+                <p><a href="">Accessibility Statement</a></p>
+                <p><a href="">Bug Bounty Program</a></p>
+            </div>
+            <div footer__lefttopcontainer_s2>
+                <p><a href="">Explore</a></p>
+                <p><a href="">Write a review</a></p>
+                <p><a href="">Add a Place</a></p>
+                <p><a href="">Join </a></p>
+                <p><a href="">Travelers' Choice</a></p>
+                <p><a href="">GreenLeaders</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Help Center</a></p>
+                <p><a href="">Travel Articles</a></p>
+            </div>
+            <div footer__lefttopcontainer_s3>
+                <p><a href="">Do Business With Us</a></p>
+                <p><a href="">Owners</a></p>
+                <p><a href="">Business Advantage</a></p>
+                <p><a href="">Sponsored Placements</a></p>
+                <p><a href="">Advertise with Us</a></p>
+                <p><a href="">Access our Content API</a></p>
+                <p><a href="">Become an Affiliate</a></p>
+                <p><a href="">Get The App</a></p>
+                <p><a href="">iPhone App</a></p>
+                <p><a href="">Android App</a></p>
+            </div>
+        </div>
+        <div class="footer__righttopcontainer">
+            <p>Tripadvisor Sites</p>
+            <p>Book the best restaurants with<a href=""> TheFork</a></p>
+            <p>Book tours and attraction tickets on<a href=""> Viator</a></p>
+            <p>Read cruise reviews on<a href=""> Cruise Critic</a></p>
+            <p>Get airline seating charts on<a href=""> Seat Guru</a></p>
+            <p>Find vacation rentals on<a href=""> FlipKey</a></p>
+            <p>Search for holiday rentals on<a href=""> Holiday Lettings</a></p>
+        </div>
+    </div>
+    <div class="footer_bottom2">
+        <div class="footer_bottom2__leftlogo">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
+        </div>
+        <div class="footer_bottom2__lefttext">
+            <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy and Cookies Statement</a>
+            <a href="">Cookie consent</a>
+            <a href="">Site Map</a>
+            <p><a href="">How the site works</a>
+            <a href="">Contact us</a></p>
+        </div>
+        <div class="footer_bottom2__right">
+            <button>USD</button><i class="fa-solid fa-angle-down" style="color: #000000;" id="id1"></i>
+            <button>Unites States</button><i class="fa-solid fa-angle-down" style="color: #000000;" id="id2"></i>
+        </div>
+    </div>
+    <div class="footer_bottom3">
+        <div class="footer_bottom3__left">
+            <p>This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu.<a href=""> more</a></p>
+        </div>
+        <div class="footer_bottom3__right">
+            <a href="https://www.facebook.com/Tripadvisor/" target="_blank"><i class="fa-brands fa-facebook" style="color: #000000;"></i></a>
+            <a href="https://x.com/TripAdvisor?mx=2" target="blank"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a>
+            <a href="https://www.pinterest.com/tripadvisor/" target="blank"><i class="fa-brands fa-pinterest" style="color: #000000;"></i></a>
+            <a href="https://www.instagram.com/tripadvisor/" target="blank"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
